@@ -1,0 +1,40 @@
+<body>
+  <div class="calc">
+
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <div class="display" type="text">{{input}}</div>
+    </div>
+
+      <div class="row">
+          <button class="operator_gray" type="button" (click)="allClear()">C</button>
+          <button class="operator_gray" type="button" (click)="pressOperator('+')">+</button>
+          <button class="operator_gray" type="button" (click)="pressOperator('-')">-</button>
+          <button class="operator_gray" type="button" (click)="pressOperator('/')">/</button>
+
+      </div>
+      <div class="row">
+          <button type="button" (click)="pressNum('7')">7</button>
+          <button type="button" (click)="pressNum('8')">8</button>
+          <button type="button" (click)="pressNum('9')">9</button>
+          <button type="button" class="operator_orange" (click)="pressOperator('*')">x</button>
+      </div>
+      <div class="row">
+        <button type="button" (click)="pressNum('4')">4</button>
+        <button type="button" (click)="pressNum('5')">5</button>
+        <button type="button" (click)="pressNum('6')">6</button>
+        <button type="button" class="operator_orange" (click)="pressOperator('+')">+</button>
+      </div>
+      <div class="row">
+          <button type="button" (click)="pressNum('1')">1</button>
+          <button type="button" (click)="pressNum('2')">2</button>
+          <button type="button" (click)="pressNum('3')">3</button>
+          <button class="operator_gray" type="button" (click)="pressOperator('-')">-</button>
+      </div>
+      <div class="row">
+        <button type="button" (click)="pressNum('0')">0</button>
+        <button type="button" (click)="pressNum('.')">.</button>
+        <button class="operator_orange" type="button" (click)="getAnswer()">=</button>
+        <button class="operator_orange" type="button" (click)="pressOperator('%')">%</button>
+      </div>
+  </div>
+</body>
